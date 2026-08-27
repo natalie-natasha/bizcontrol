@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბიზნეს კონტროლ ჯგუფი | BIZ CONTROL</title>
+    <meta name="description" content="ბიზნესის ეფექტურობისა და ოპერაციული მართვის აუთსორსინგი — ოპერაციული მონიტორინგი, HR მომსახურება და ბიზნეს-კონსულტაცია.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Georgian Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- English Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+    <div class="container nav">
+        <a href="#home" class="logo">
+            <span class="logo-biz">BIZ</span>
+            <span class="logo-control">CONTROL</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#about"><span class="ka">ჩვენ შესახებ</span><span class="en">About Us</span></a>
+            <a href="#services"><span class="ka">სერვისები</span><span class="en">Services</span></a>
+            <a href="#process"><span class="ka">როგორ ვმუშაობთ</span><span class="en">How We Work</span></a>
+            <a href="#contact"><span class="ka">კონტაქტი</span><span class="en">Contact</span></a>
+        </nav>
+
+        <div class="nav-actions">
+            <!-- Language Switcher -->
+            <div class="lang-switch">
+                <button id="lang-ka" class="active">GE</button>
+                <button id="lang-en">EN</button>
+            </div>
+            
+            <a href="#contact" class="nav-button">
+                <span class="ka">დაგვიკავშირდით</span><span class="en">Contact Us</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <!-- The JavaScript reads both slogans from data-slogans and types them in a loop. -->
+        <h1>
+            <span class="hero-title-text" data-slogans="We Control. You Grow.|Control Today. Grow Tomorrow." aria-live="polite"></span>
+             
+        </h1>
+        <!-- Language-specific text is toggled by the language switcher below. -->
+        <p class="hero-description">
+            <span class="ka">ეფექტური და გამართული ბიზნესისთვის.</span>
+            <span class="en">For an effective and streamlined business.</span>
+        </p>
+        <a class="hero-button" href="#contact">
+            <span class="ka">დაგვიკავშირდით</span><span class="en">Contact Us</span>
+        </a>
+    </div>
+    <div class="hero-image">
+        <img src="source/herobackground.png" alt="workers working in a modern office">
+    </div>
+</section>
+
+<main>
+
+<!-- ================= TRUST ================= -->
+<section class="trust">
+    <div class="container trust-content">
+        <span>
+            <span class="ka">ჩვენი მიზანია თქვენი ბიზნესის</span>
+            <span class="en">Our goal is your business's</span>
+        </span>
+        <div class="trust-items">
+            <span><span class="ka">კონტროლი</span><span class="en">CONTROL</span></span>
+            <span><span class="ka">ეფექტურობა</span><span class="en">EFFICIENCY</span></span>
+            <span><span class="ka">გამჭვირვალობა</span><span class="en">TRANSPARENCY</span></span>
+            <span><span class="ka">ზრდა</span><span class="en">GROWTH</span></span>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section about" id="about">
+    <div class="container about-grid">
+        <div class="section-label">
+            <span>01</span>
+            <span class="ka">ვინ ვართ</span><span class="en">Who We Are</span>
+        </div>
+        <div class="about-content">
+    <h2>
+        <span class="ka">თქვენი ბიზნესის <span>სანდო პარტნიორი.</span></span>
+        <span class="en">Your Business's <span>Trusted Partner.</span></span>
+    </h2>
+    
+    <p class="large-text">
+        <span class="ka">
+            BIZ CONTROL არის ბიზნესის კონტროლის აუთსორსინგის კომპანია, რომელიც ეხმარება ბიზნესებს ყოველდღიური ოპერაციული პროცესების ეფექტურად მართვაში, კონტროლსა და გაუმჯობესებაში.
+        </span>
+        <span class="en">
+            BIZ CONTROL is a business control and outsourcing company helping businesses effectively manage, control, and improve their daily operational processes.
+        </span>
+    </p>
+    
+    <p>
+        <span class="ka">
+            ჩვენი გუნდი აერთიანებს მრავალწლიანი სამუშაო გამოცდილების მქონე პროფესიონალებს მონიტორინგისა და ადამიანური რესურსების მართვის (HR) მიმართულებით. გუნდის პრაქტიკული გამოცდილება მოიცავს თანამშრომლებისა და მენეჯმენტის საქმიანობის კონტროლს, ფილიალების საოპერაციო პროცესების მონიტორინგს, აღწერებისა და ინვენტარიზაციების ჩატარებას, ნაშთების გადამოწმებას, დანაკარგებისა და დანაკლისების გამოვლენას, სამუშაო პროცესების შეფასებასა და HR მიმართულების მართვას.
+        </span>
+        <span class="en">
+            Our team brings together professionals with years of experience in monitoring and human resources (HR) management. Our practical experience includes controlling employee and management activities, monitoring branch operations, conducting inventory counts, verifying balances, detecting losses, evaluating workflows, and managing HR.
+        </span>
+    </p>
+
+    <!-- EXPERIENCE -->
+    <p class="experience-text">
+        <span class="ka">
+            ჩვენს გამოცდილებას აერთიანებს <strong>12-წლიანი პრაქტიკული გამოცდილება</strong>, მათ შორის 
+            <strong>8 წელი სამშენებლო მასალების ჰიპერმარკეტ „ბრიკორამაში“</strong> და 
+            <strong>4 წელი კომპანია „ევრომარტში“</strong>.
+        </span>
+        <span class="en">
+            Our expertise is backed by <strong>12 years of combined practical experience</strong>, including 
+            <strong>8 years at Brikorama, a construction materials hypermarket</strong>, and 
+            <strong>4 years at Euromart</strong>.
+        </span>
+    </p>
+    
+    <p>
+        <span class="ka">
+            ჩვენი მთავარი მიზანია, ბიზნესის მფლობელებსა და ხელმძღვანელებს მივცეთ რეალური, ობიექტური და დროული ინფორმაცია იმის შესახებ, თუ რა ხდება კომპანიაში ყოველდღიურად. ჩვენ არ ვცვლით ბიზნესის მენეჯმენტს — ჩვენ ვქმნით დამოუკიდებელი კონტროლის სისტემას, რომელიც ამოწმებს პროცესების სწორად შესრულებას, აფიქსირებს რისკებსა და დარღვევებს და ხელმძღვანელობას ეხმარება სწორი გადაწყვეტილებების მიღებაში.
+        </span>
+        <span class="en">
+            Our main goal is to provide business owners and managers with real, objective, and timely information about what happens in the company daily. We don't replace management — we create an independent control system that verifies correct process execution, identifies risks, and helps management make informed decisions.
+        </span>
+    </p>
+</div>
+    </div>
+</section>
+
+<!-- ================= FOUNDER ================= -->
+<section class="section founder" id="founder">
+    <div class="container founder-grid">
+        <div class="founder-card">
+            <span class="founder-mark">B</span>
+            <span class="ka">დამფუძნებელი</span>
+            <span class="en">Founder</span>
+        </div>
+        <div class="founder-content">
+            <div class="section-label">
+                <span>02</span>
+                <span class="ka">დამფუძნებლის შესახებ</span>
+                <span class="en">About the Founder</span>
+            </div>
+            <h2>
+                <span class="ka">ნატალია <span>მაისურაძე.</span></span>
+                <span class="en">Natalie <span>Maisuradze.</span></span>
+            </h2>
+            <p>
+                <span class="ka">BIZ CONTROL-ის დამფუძნებელი, რომელიც ბიზნესებს ეხმარება ყოველდღიური პროცესების კონტროლში, რისკების გამოვლენასა და ეფექტურობის გაუმჯობესებაში.</span>
+                <span class="en">Founder of BIZ CONTROL, helping businesses control daily operations, identify risks, and improve efficiency.</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section services" id="services">
+    <div class="container">
+        <div class="section-heading">
+            <div class="section-label">
+                <span>03</span>
+                <span class="ka">სერვისები</span><span class="en">Services</span>
+            </div>
+            <h2>
+                <span class="ka">კონტროლი, რომელიც <span>ბიზნესს შედეგამდე მიჰყავს.</span></span>
+                <span class="en">Control that drives <span>business results.</span></span>
+            </h2>
+        </div>
+
+        <div class="services-grid">
+            <!-- SERVICE 01: INVENTORY -->
+            <article class="service-card">
+                <div class="service-number">01</div>
+                <div class="service-icon">📦</div>
+                <div class="service-subtitle"><span class="ka">INVENTORY CONTROL</span><span class="en">INVENTORY CONTROL</span></div>
+                <h3>
+                    <span class="ka">აღწერები & ინვენტარიზაცია</span>
+                    <span class="en">Inventory & Stocktaking</span>
+                </h3>
+                <p>
+                    <span class="ka">ზუსტი ნაშთები. გამოვლენილი სხვაობები. კონტროლირებადი მარაგები.</span>
+                    <span class="en">Accurate stock. Identified discrepancies. Controlled inventory.</span>
+                </p>
+                <ul>
+                    <li><span class="ka">მოულოდნელი (წერტილოვანი) და შერჩევითი აღწერები</span><span class="en">Surprise and selective inventory checks</span></li>
+                    <li><span class="ka">ფაქტობრივი ნაშთების გადამოწმება</span><span class="en">Verification of actual balances</span></li>
+                    <li><span class="ka">დანაკლისისა და ზედმეტობის დაფიქსირება</span><span class="en">Identification of shortages and surpluses</span></li>
+                </ul>
+                <div class="details-content">
+                    <ul>
+                        <li><span class="ka">ინვენტარიზაციის შედეგების შეჯერება</span><span class="en">Reconciliation of inventory results</span></li>
+                        <li><span class="ka">გამოვლენილი სხვაობების შესახებ ანგარიშის მომზადება</span><span class="en">Preparation of reports on identified discrepancies</span></li>
+                        <li><span class="ka">მნიშვნელოვანი პროდუქციის თვეში ერთხელ გადამოწმება</span><span class="en">Monthly verification of high-priority products</span></li>
+                    </ul>
+                </div>
+                <button class="expand-btn">
+                    <span class="ka">დეტალურად</span><span class="en">Details</span> &rarr;
+                </button>
+            </article>
+
+            <!-- SERVICE 03: MONITORING -->
+            <article class="service-card">
+                <div class="service-number">03</div>
+                <div class="service-icon">👁</div>
+                <div class="service-subtitle"><span class="ka">MONITORING</span><span class="en">MONITORING</span></div>
+                <h3>
+                    <span class="ka">მონიტორინგი</span>
+                    <span class="en">Monitoring</span>
+                </h3>
+                <p>
+                    <span class="ka">ბიზნესის ყოველდღიური პროცესების მრავალდონიანი კონტროლი.</span>
+                    <span class="en">Multi-level control of daily business processes.</span>
+                </p>
+                
+                <div class="tabs-container">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-target="tab-emp"><span class="ka">თანამშრომლები</span><span class="en">Employees</span></button>
+                        <button class="tab-btn" data-target="tab-mgr"><span class="ka">მენეჯერები</span><span class="en">Managers</span></button>
+                        <button class="tab-btn" data-target="tab-vid"><span class="ka">ვიდეო მონიტორინგი</span><span class="en">Video monitoring</span></button>
+                        <button class="tab-btn" data-target="tab-cash"><span class="ka">სალარო</span><span class="en">Cash Desk</span></button>
+                        <button class="tab-btn" data-target="tab-prod"><span class="ka">პროდუქცია</span><span class="en">Products</span></button>
+                    </div>
+                    
+                    <div class="tab-content active" id="tab-emp">
+                        <ul>
+                            <li><span class="ka">სამუშაო გრაფიკის კონტროლი და ნამუშევარი საათების გადამოწმება</span><span class="en">Control of schedules and worked hours</span></li>
+                            <li><span class="ka">დაგვიანებებისა და გაცდენების კონტროლი</span><span class="en">Control of delays and absences</span></li>
+                            <li><span class="ka">სამუშაო ადგილის თვითნებურად დატოვების გამოვლენა</span><span class="en">Detecting unauthorized absences from the workplace</span></li>
+                            <li><span class="ka">სამუშაო პროცესში ჩართულობის მონიტორინგი</span><span class="en">Monitoring engagement in the work process</span></li>
+                            <li><span class="ka">მოვალეობების შესრულებისა და შიდა წესების დარღვევების დაფიქსირება</span><span class="en">Ensuring fulfillment of duties and internal rules</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab-mgr">
+                        <ul>
+                            <li><span class="ka">მენეჯერის მიერ დაკისრებული მოვალეობების კონტროლი</span><span class="en">Control over managers' duties</span></li>
+                            <li><span class="ka">მენეჯერის სამუშაო ცხრილისა და ანგარიშგების გადამოწმება</span><span class="en">Verification of managers' schedules and reports</span></li>
+                            <li><span class="ka">კომპანიის შიდა პროცედურების შესრულების მონიტორინგი</span><span class="en">Monitoring the execution of internal procedures</span></li>
+                            <li><span class="ka">დაშვებული დარღვევებისა და ხარვეზების დაფიქსირება</span><span class="en">Detecting managerial violations and flaws</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab-vid">
+                        <ul>
+                            <li><span class="ka">ვიდეოკამერებით სამუშაო პროცესების შერჩევითი კონტროლი</span><span class="en">Selective video control of work processes</span></li>
+                            <li><span class="ka">სალაროსთან მიმდინარე პროცესების გადამოწმება</span><span class="en">Verification of cash desk processes via video</span></li>
+                            <li><span class="ka">საეჭვო შემთხვევების ვიდეომასალით გადამოწმება</span><span class="en">Cross-checking suspicious cases with video footage</span></li>
+                            <li><span class="ka">ვიდეოჩანაწერებისა და სხვა მონაცემების შედარება</span><span class="en">Comparing video records with system data</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab-cash">
+                        <ul>
+                            <li><span class="ka">სალაროს დახურვის პროცესის მონიტორინგი</span><span class="en">Monitoring the cash desk closing process</span></li>
+                            <li><span class="ka">სალაროს ნაშთების კონტროლი და სხვაობების გამოვლენა</span><span class="en">Cash balance control and discrepancy detection</span></li>
+                            <li><span class="ka">სალაროსთან დაკავშირებული პროცედურების შესრულება</span><span class="en">Monitoring cash-related procedures</span></li>
+                            <li><span class="ka">საეჭვო ოპერაციების გამოვლენა და გადამოწმება</span><span class="en">Detection and verification of suspicious transactions</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab-prod">
+                        <ul>
+                            <li><span class="ka">პროდუქციის ფაქტობრივი ნაშთების კონტროლი</span><span class="en">Control of actual product balances</span></li>
+                            <li><span class="ka">სისტემურ და ფაქტობრივ ნაშთებს შორის სხვაობების გამოვლენა</span><span class="en">Detecting systemic and actual balance differences</span></li>
+                            <li><span class="ka">დაბრუნებული პროდუქციის და გადაადგილების კონტროლი</span><span class="en">Control of product returns and movements</span></li>
+                            <li><span class="ka">მაღალი რისკის მქონე პროდუქტების გაძლიერებული მონიტორინგი</span><span class="en">Enhanced monitoring for high-risk products</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- SERVICE 04: HR ADMIN -->
+            <article class="service-card">
+                <div class="service-number">04 </div>
+                <div class="service-icon">👥</div>
+                <div class="service-subtitle"><span class="ka">HR CONTROL</span><span class="en">HR CONTROL</span></div>
+                <h3>
+                    <span class="ka">HR ადმინისტრირება</span>
+                    <span class="en">HR Administration</span>
+                </h3>
+                <p>
+                    <span class="ka">თანამშრომელთან დაკავშირებული ადმინისტრაციული და საოპერაციო პროცესების მოწესრიგება და კონტროლი.</span>
+                    <span class="en">Organization and control of administrative and operational processes related to employees.</span>
+                </p>
+                <ul>
+                    <li><span class="ka">თანამშრომლის ადმინისტრაციული პროცესები</span><span class="en">Employee administrative processes</span></li>
+                    <li><span class="ka">საჭირო დოკუმენტაციის მოწესრიგება და კონტროლი</span><span class="en">Organization and control of documentation</span></li>
+                    <li><span class="ka">სამუშაო გრაფიკებისა და დასწრების კონტროლი</span><span class="en">Control of work schedules and attendance</span></li>
+                </ul>
+                <div class="details-content">
+                    <ul>
+                        <li><span class="ka">შრომითი პროცესების ადმინისტრაციული მონიტორინგი</span><span class="en">Administrative monitoring of labor processes</span></li>
+                        <li><span class="ka">შიდა წესებისა და პროცედურების შესრულების კონტროლი</span><span class="en">Control of internal rules and procedures compliance</span></li>
+                        <li><span class="ka">HR მონაცემებისა და ანგარიშგების წარმოება</span><span class="en">Production of HR data and reporting</span></li>
+                        <li><span class="ka">საოპერაციო საკითხების მონიტორინგი</span><span class="en">Monitoring of operational issues</span></li>
+                    </ul>
+                </div>
+                <button class="expand-btn">
+                    <span class="ka">დეტალურად</span><span class="en">Details</span> &rarr;
+                </button>
+            </article>
+
+            <!-- SERVICE 05: FULL CONTROL -->
+            <article class="service-card featured">
+                <div class="service-number">05</div>
+                <div class="service-icon">🎯</div>
+                <div class="service-subtitle"><span class="ka">FULL CONTROL</span><span class="en">FULL CONTROL</span></div>
+                <h3>
+                    <span class="ka">კომპლექსური კონტროლი</span>
+                    <span class="en">Comprehensive Control</span>
+                </h3>
+                <p>
+                    <span class="ka">ბიზნესის ძირითადი საოპერაციო პროცესების ერთიანი კონტროლის სისტემა.</span>
+                    <span class="en">A unified control system for main business operational processes.</span>
+                </p>
+                <ul>
+                    <li><span class="ka">ყველა მიმართულება ერთიან სისტემაში</span><span class="en">All directions in a unified system</span></li>
+                    <li><span class="ka">ინდივიდუალური მიდგომა თქვენს ბიზნესზე</span><span class="en">Individual approach tailored to your business</span></li>
+                    <li><span class="ka">მოიცავს: ინვენტარიზაციას, მონიტორინგს, HR-ს</span><span class="en">Includes: Inventory, Monitoring, Video Control, HR</span></li>
+                </ul>
+                <br>
+                <a href="#contact" class="action-link">
+                    <span class="ka">დაგვიკავშირდით</span><span class="en">Contact Us</span> &rarr;
+                </a>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="section why-us">
+    <div class="container why-grid">
+        <div class="why-left">
+            <div class="section-label">
+                <span>06</span>
+                <span class="ka">რატომ ჩვენ</span><span class="en">Why Us</span>
+            </div>
+            <h2>
+                <span class="ka">კონტროლი იწყება <span>გამჭვირვალობით.</span></span>
+                <span class="en">Control starts with <span>transparency.</span></span>
+            </h2>
+            <p>
+                <span class="ka">ბიზნესის ყოველდღიურ საქმიანობაში არსებული პრობლემების დროული გამოვლენა საშუალებას გაძლევთ შეამციროთ დანაკარგები, გააუმჯობესოთ პროცესები და გაზარდოთ თანამშრომლების ეფექტიანობა.</span>
+                <span class="en">Timely detection of problems in daily business activities allows you to reduce losses, improve processes, and increase employee efficiency.</span>
+            </p>
+            <a href="#contact" class="text-link">
+                <span class="ka">დაგვიკავშირდით</span><span class="en">Contact Us</span> →
+            </a>
+        </div>
+        <div class="why-cards">
+            <div class="why-card">
+                <span>01</span>
+                <span class="ka why-card-title">პრაქტიკული გამოცდილება</span><span class="en why-card-title">Practical Experience</span>
+                <br>
+                <p><span class="ka">პრაქტიკული გამოცდილება საცალო ვაჭრობის სექტორში და ოპერაციულ მართვაში.</span><span class="en">Hands-on experience in the retail sector and operational management.</span></p>
+            </div>
+            <div class="why-card">
+                <span>02</span>
+                <span class="ka why-card-title">კონფიდენციალურობა</span><span class="en why-card-title">Confidentiality</span>
+                <br>
+                <p><span class="ka">თქვენი ბიზნესის ინფორმაციის სრული კონფიდენციალურობის დაცვა.</span><span class="en">Full protection and confidentiality of your business information.</span></p>
+            </div>
+            <div class="why-card">
+                <span>03</span>
+                <span class="ka why-card-title">დეტალური ანგარიშგება</span><span class="en why-card-title">Detailed Reporting</span>
+                <br>
+                <p><span class="ka">დეტალური ანგარიშები, ანალიტიკა და პრაქტიკული რეკომენდაციები.</span><span class="en">Comprehensive reports, analytics, and practical recommendations.</span></p>
+            </div>
+            <div class="why-card">
+                <span>04</span>
+                <span class="ka why-card-title">ინდივიდუალური მიდგომა</span><span class="en why-card-title">Individual Approach</span>
+                <br>
+                <p><span class="ka">თითოეულ კომპანიაზე მორგებული მომსახურება და სამოქმედო გეგმა.</span><span class="en">Customized services and action plans tailored to each company.</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="section process" id="process">
+    <div class="container">
+        <div class="section-heading centered">
+            <div class="section-label">
+                <span>04</span>
+                <span class="ka">როგორ ვმუშაობთ</span><span class="en">How We Work</span>
+            </div>
+            <h2>
+                <span class="ka">საჭიროების შესწავლიდან <span>შედეგამდე.</span></span>
+                <span class="en">From needs assessment to <span>results.</span></span>
+            </h2>
+        </div>
+        <div class="process-line">
+            <div class="process-step">
+                <div class="process-circle">01</div>
+                <h3><span class="ka">ვსწავლობთ</span><span class="en">We Study</span></h3>
+                <p><span class="ka">ვსწავლობთ კომპანიის საჭიროებებს, პროცესებსა და გამოწვევებს.</span><span class="en">We study the company's needs, processes, and challenges.</span></p>
+            </div>
+            <div class="process-step">
+                <div class="process-circle">02</div>
+                <h3><span class="ka">ვგეგმავთ</span><span class="en">We Plan</span></h3>
+                <p><span class="ka">ვამზადებთ ინდივიდუალურ სამოქმედო გეგმას.</span><span class="en">We prepare an individualized action plan.</span></p>
+            </div>
+            <div class="process-step">
+                <div class="process-circle">03</div>
+                <h3><span class="ka">ვმართავთ</span><span class="en">We Manage</span></h3>
+                <p><span class="ka">ვიწყებთ მონიტორინგს და HR პროცესების მართვას.</span><span class="en">We initiate monitoring and HR process management.</span></p>
+            </div>
+            <div class="process-step">
+                <div class="process-circle">04</div>
+                <h3><span class="ka">ვაუმჯობესებთ</span><span class="en">We Improve</span></h3>
+                <p><span class="ka">ყოველთვიურად წარმოგიდგენთ ანგარიშს, შედეგებსა და რეკომენდაციებს.</span><span class="en">We present monthly reports, results, and recommendations.</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="cta">
+    <div class="container cta-content">
+        <div class="cta-label">
+            <span class="ka">დავიწყოთ თანამშრომლობა</span><span class="en">Let's start collaborating</span>
+        </div>
+        <h2>
+            <span class="ka">მზად ხართ <span>გააუმჯობესოთ ბიზნესი?</span></span>
+            <span class="en">Ready to <span>improve your business?</span></span>
+        </h2>
+        <p>
+            <span class="ka">მოგვიყევით თქვენი ბიზნესის შესახებ, გამოწვევებსა და მიზნებზე და ერთად განვიხილოთ, როგორ შეგვიძლია დაგეხმაროთ.</span>
+            <span class="en">Tell us about your business, challenges, and goals, and let's discuss how we can help.</span>
+        </p>
+        <a href="#contact" class="button-light" style="display:inline-block; padding: 14px 28px; background: white; border-radius: 99px; color: var(--black); font-weight: bold; text-decoration: none; margin-top: 20px;">
+            <span class="ka">დაგვიკავშირდით</span><span class="en">Contact Us</span> →
+        </a>
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section contact" id="contact">
+
+    <div class="container contact-grid">
+
+        <!-- LEFT -->
+        <div class="contact-intro">
+
+            <div class="section-label">
+                <span>05</span>
+                <span class="ka">კონტაქტი</span>
+                <span class="en">Contact</span>
+            </div>
+
+            <h2>
+                <span class="ka">
+                    მოდით ვიმუშაოთ
+                    <span>ერთად.</span>
+                </span>
+
+                <span class="en">
+                    Let's work
+                    <span>together.</span>
+                </span>
+            </h2>
+
+            <p>
+                <span class="ka">
+                    მოგვწერეთ თქვენი ბიზნესის შესახებ და
+                    გაგვიზიარეთ თქვენი საჭიროებები.
+                    BIZ CONTROL დაგეხმარებათ ბიზნესის
+                    ოპერაციული პროცესების კონტროლსა და
+                    ეფექტურობის გაუმჯობესებაში.
+                </span>
+
+                <span class="en">
+                    Tell us about your business and share
+                    your needs with us. BIZ CONTROL helps
+                    businesses improve operational control,
+                    efficiency, and performance.
+                </span>
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT -->
+        <div class="contact-card">
+
+            <div>
+                <span>
+                    <span class="ka">მისამართი</span>
+                    <span class="en">Address</span>
+                </span>
+
+                <strong>
+                    <span class="ka">თბილისი, საქართველო</span>
+                    <span class="en">Tbilisi, Georgia</span>
+                </strong>
+            </div>
+
+
+            <div>
+                <span>
+                    <span class="ka">ტელეფონი</span>
+                    <span class="en">Phone</span>
+                </span>
+
+                <a href="tel:+995599312623">
+                    +995 599 31 26 23
+                </a>
+            </div>
+
+
+            <div>
+                <span>
+                    <span class="ka">ელფოსტა</span>
+                    <span class="en">Email</span>
+                </span>
+
+                <a href="mailto:maisuradzenatali01@gmail.com">
+                    maisuradzenatali01@gmail.com
+                </a>
+            </div>
+
+            <div>
+                <span>
+                    <span class="ka">WhatsApp</span>
+                    <span class="en">WhatsApp</span>
+                </span>
+
+                <a href="https://wa.me/995599312623" target="_blank" rel="noopener">
+                    +995 599 31 26 23
+                </a>
+            </div>
+
+
+            <div class="contact-buttons">
+
+                <a
+                    class="btn btn-primary"
+                    href="tel:+995599312623"
+                >
+                    <span class="button-icon" aria-hidden="true">☎</span>
+                    <span class="ka">დარეკვა</span>
+                    <span class="en">Call</span>
+                </a>
+
+                <a
+                    class="btn btn-light"
+                    href="mailto:maisuradzenatali01@gmail.com"
+                >
+                    <span class="button-icon" aria-hidden="true">✉</span>
+                    <span class="ka">ელ. ფოსტა</span>
+                    <span class="en">Email</span>
+                </a>
+
+                <a
+                    class="btn btn-whatsapp"
+                    href="https://wa.me/995599312623"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <img class="button-icon whatsapp-logo" src="source/whatsapp-logo.png" alt="">
+                    <span>WhatsApp</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container footer-top">
+        <div class="footer-brand">
+            <a href="#home" class="logo">
+                <span class="logo-mark">B</span>
+                <span>
+                    <span class="ka">ბიზნეს კონტროლ <span class="logo-accent">ჯგუფი</span></span>
+                    <span class="en">BIZ <span class="logo-accent">CONTROL</span></span>
+                </span>
+            </a>
+            <p>
+                <span class="ka">თქვენი სანდო პარტნიორი ეფექტური და გამართული ბიზნესისთვის.</span>
+                <span class="en">Your trusted partner for an effective and streamlined business.</span>
+            </p>
+        </div>
+        <div class="footer-links">
+            <div>
+                <h4><span class="ka">კომპანია</span><span class="en">Company</span></h4>
+                <a href="#about"><span class="ka">ჩვენ შესახებ</span><span class="en">About Us</span></a>
+                <a href="#services"><span class="ka">სერვისები</span><span class="en">Services</span></a>
+                <a href="#process"><span class="ka">როგორ ვმუშაობთ</span><span class="en">How We Work</span></a>
+            </div>
+            <div>
+                <h4><span class="ka">სერვისები</span><span class="en">Services</span></h4>
+                <a href="#services"><span class="ka">აღწერები & ინვენტარიზაცია</span><span class="en">Inventory Control</span></a>
+                <a href="#services"><span class="ka">მონიტორინგი</span><span class="en">Monitoring</span></a>
+                <a href="#services"><span class="ka">HR ადმინისტრირება</span><span class="en">HR Administration</span></a>
+            </div>
+            <div>
+                <h4><span class="ka">კონტაქტი</span><span class="en">Contact</span></h4>
+                <a href="#contact"><span class="ka">დაგვიკავშირდით</span><span class="en">Contact Us</span></a>
+                <a href="mailto:info@businesscontrol.ge"><span class="ka">მოგვწერეთ</span><span class="en">Email Us</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <span>© 2026 BIZ CONTROL. <span class="ka">ყველა უფლება დაცულია.</span><span class="en">All rights reserved.</span></span>
+        <span>
+            <span class="ka">ოპერაციული მართვა • HR • ბიზნესის ეფექტურობა</span>
+            <span class="en">Operational Management • HR • Business Efficiency</span>
+        </span>
+    </div>
+</footer>
+
+</main>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
